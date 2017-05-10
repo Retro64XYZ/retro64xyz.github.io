@@ -1,0 +1,155 @@
+class: center, middle
+
+# Introduction To Linux 
+
+???
+
+Today I will be introducing the Linux Operating System and the concepts that
+make up an operating system. I will include a high level overview of what
+standards come together to constitute an operating system, how an operating
+system benefits the user, and what alternative Linux provides to the standard
+Mac / Windows ecosystem that most users are familiar with.
+
+---
+
+# Agenda
+
+1. What is Linux?
+2. How do we acquire Linux?
+3. What does Linux do?
+4. What is open source software?
+5. Who is using Linux?
+
+???
+
+There are five core concepts that I want to explore. We should discuss what
+Linux is, why there are so many "flavors" or choices when it comes to Linux,
+and how we should acquire Linux. We need to understand what Linux does when it
+is installed on your computer and why you may want to replace an operating
+system like Windows with a copy of Linux. We need to understand the concepts of
+open source software. What does having a free and open standard for our OS do
+for us. We must also discover just who is using Linux.
+
+---
+
+# Linux Is An Operating System
+
+- Portable Operating System Interface
+
+	POSIX is the name of a family of related standards specified by the IEEE to
+	define the application programming interface, shell, and utilitie interfaces
+	for software compatible with variants of Unix. Being POSIX compatible provides
+	the user with confidance that they should have an understanding of how the OS
+	functions along with the components of the OS when writing software that
+	interacts with the system.
+
+- Linux Standard Base
+
+	LSB is a joint project by several Linux distributions to standardize software
+	structure, filesystem hierarchy, and interaction with a Linux based OS. The LSB
+	is based on POSIX specification, Single Unix Specification, and other open
+	standards while also enhancing or extending them as necessary.
+
+???
+
+SUS? LSB? POSIX? The real reality is that we have generally standardized how a
+system should operate and react since 2001. There are around 3700 pages,
+thematically divided, that provide the definitions, conventions, and
+specifications for every aspect of the operating system. This also includes a
+certification and testing suite that can be used to verify compliance for your
+operating system. Fee for certification can range from $2000 to $12000
+depending on necessity and licensure. Few if any independnant Linux
+distributions are willing to pay for certification or licensure but many do
+follow the standards set forth.
+
+---
+
+# What is an operating system?
+
+The operating system is the software that supports the basic functions of the
+computer. This includes scheduling tasks, executing applications, and
+controlling the peripherals installed on the computer. 
+
+???
+
+We need the operating system to manage the operations of all of the software
+that we want to run. These are the building blocks that provide us with a
+manageable and useful system. A standards compliant operating system provides
+the best framework for developing software that runs across a multitude of
+hardware combinations and simplifies the job of the individuals writing
+software for that operating system.
+
+---
+
+# Where should I get Linux?
+
+The most popular Linux distribution is Linux Mint with Ubuntu and Debian taking
+the second and third place respectively. You can download a copy of Linux Mint
+using your browser. I recommend that you view [distro
+watch](https://distrowatch.com/dwres.php?resource=major) and make your choice
+after reading about the different distributions available to you.
+
+I recommend the following -
+
+1. Xubuntu
+2. Linux Mint
+3. Ubuntu
+
+???
+
+The choice of Linux should come down to your choice of window manager, desktop
+environment, and the package manager that you are most comfortable with. The
+deb/apt style and the rpm/yum style are the two most popular package managers.
+My favorite window manager is I3 and my desktop environment of choice is XFCE.
+
+---
+
+# Why propose Linux over that OS that came with my hardware?
+
+- Cost
+	- Free
+- Security
+	- Open Source And Regularly Patched
+- Choice ( Freedom )
+	- Build it how you like it
+
+---
+
+# Who is using Linux?
+
+Developers, programmers, and people who are interested in taking control of
+their computer are the most likely users of a Linux based operating system. If
+you want to understand how your computer works and are interested in
+contributing to the development of software, you will most likely want to use
+some form of Unix or Linux variant.
+
+---
+
+# Does Linux have software?
+
+- Email
+	- Thunderbird, Geary, Mutt
+- Chat
+	- Pidgin, Empathy, Kopete
+- Video Editing 
+	- Open Shot, Pitivi, Blender
+- Video Player 
+	- MPV, VLC
+- Music Player 
+	- CMUS, MPV, VLC
+- Word Processor 
+	- VIM, EMACS, Open Office
+- Text Editor 
+	- VIM, EMACS
+- IDE 
+	- Codelite, Netbeans, Code::Blocks, VIM, and MORE!!!
+- Web Browser 
+	- Chrome, Firefox, Ice Weasel, and MORE!!!
+- Gaming 
+	- Steam, Desura, Good Old Games, and MORE!!!
+
+???
+
+There are plenty of tools available to you as a user if you are interested in
+switching over to Linux. If you can accomplish your goal on a Windows or Mac
+based system, you should have no issues doing it under Linux.

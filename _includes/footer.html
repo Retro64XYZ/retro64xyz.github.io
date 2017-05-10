@@ -1,0 +1,75 @@
+<footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">{{ site.title }}</h2>
+
+    <div class="footer-col-wrapper">
+
+      <div class="footer-col  footer-col-1">
+        <ul class="social-media-list">
+
+          <li>
+			  <a href="{{ site.url }}feed.xml">
+              <span class="icon  icon--rss">
+				  <i class="fa fa-rss"></i>
+              </span>
+              <span class="username">RSS Feed</span>
+            </a>
+          </li>
+
+          {% if site.email %}
+          <li>
+            <a href="mailto:{{ site.email_sendto }}">
+              <span class="icon  icon--envelope">
+				  <i class="fa fa-envelope"></i>
+              </span>
+              <span class="username">{{ site.email_display }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.github_username %}
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">
+              <span class="icon  icon--github">
+				  <i class="fa fa-github"></i>
+              </span>
+              <span class="username">{{ site.github_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.twitter_username %}
+          <li>
+            <a href="https://twitter.com/{{ site.twitter_username }}">
+              <span class="icon  icon--twitter">
+				  <i class="fa fa-twitter"></i>
+              </span>
+              <span class="username">{{ site.twitter_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.youtube_username %}
+          <li>
+            <a href="https://youtube.com/{{ site.youtube_username }}">
+              <span class="icon  icon--youtube">
+				  <i class="fa fa-youtube"></i>
+              </span>
+              <span class="username">{{ site.youtube_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+        </ul>
+      </div>
+
+      <div class="footer-col  footer-col-3" style="float:right;">
+        <p class="text">{{ site.description }}</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>

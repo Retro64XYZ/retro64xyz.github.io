@@ -1,0 +1,11 @@
+---
+layout: {{ layout }}
+title: "{{ title }}"
+date: {{ date }}
+author:     IWriteThings
+summary:    ABOUTPOST.
+categories: GitHub
+thumbnail:  icon-desktop
+tags:
+ - github
+---

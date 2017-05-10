@@ -1,0 +1,27 @@
+# Site settings
+title: "Retro64.xyz"
+# email:
+description: > # this means to ignore newlines until "baseurl:"
+    Old technology is some of the best technology. This is where all the things
+    that I want to reminisce about live. I provide high quality and impactful
+    training on a wide range of topics. Sometimes I blog, vlog, and just speak
+    my mind. 
+twitter_username: Retro64XYZ
+github_username: Retro64XYZ
+# youtube_username: my_youtube
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+port: 4488
+permalink: pretty
+post_ext: md
+keep_files: [assets]
+# Pagination Settings
+paginate: 5
+paginate_path: "/index/page:num"
+# Gems
+gems:
+    - jekyll-paginate

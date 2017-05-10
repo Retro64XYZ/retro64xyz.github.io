@@ -1,0 +1,123 @@
+class: center, middle
+
+# Introduction To Linux Finances 
+
+???
+
+Today I will be introducing the concepts and tools we need to use Linux and
+Free Software to help us manage our finances. Linux has numerous tools that can
+be used when dealing with taxes, investments, savings, and putting all of this
+information together to form a bigger picture. There are also proprietary and
+closed source tools that are available as well. As it stands, the financial
+world has not yet entered the free software pool completely and there are still
+situations where we must deal with their decisions.
+
+---
+
+# Agenda
+
+1. How can free software help me manage my money?
+2. How do we acquire the software?
+3. What are my options?
+4. How do I keep track of it all?
+5. Is it worth it?
+
+???
+
+There are five important concepts that we should cover when it comes to free
+software and our finances. We need to decide if it makes sense for you to take
+an interest in your financials, how you should go about doing it, and who you
+should bank with. You also need to decide how you plan to keep track of it all
+and if the time invested will pay dividends in the future.
+
+---
+
+# Why financial literacy?
+
+- Comfort
+
+	A financial cushion can help you make important decisions. You can pick and
+	choose when and where you want to work in order to maximize your happiness. It
+	becomes easier when you feel comfortable with your finances and have a better
+	understanding of how much money you need, when, and why.
+
+- Safety
+
+	Loss of a job could be devestating but having strong understanding of your
+	finances can help prevent a disaster. If you are able to budget, make
+	decisions, and plan, it makes it much easier on you when it is time to go
+	looking for a new source of income.
+
+- Retirement
+
+	Riterement and planning for retirement is extremely important. You need to have
+	an understanding of where and when you spend your money so you can become self
+	sufficient and plan out your future. Many of us have been told numerous times
+	that we will not be able to rely on Social Security in the future. You need to
+	build your self reliance and plan on caring for yourself in the future.
+
+???
+
+There are numerous benefits to be found when you decide to take an interest in
+your own finances. It can often be cheaper, simpler, and more confidence
+inspiring. You just need to make a decision about where you want to go, build a
+plan, and put that plan into action.
+
+---
+
+# What do I need to do? 
+
+- Budget Planning
+- Save
+- Invest
+
+???
+
+You need to make a budget. Save money. Invest those savings. Setting small but
+attainable goals can assist you in achieving larger goals down the line. Each
+year you should set yourself a small goal that you feel you can achieve.
+
+---
+
+# What budget software?
+
+1. http://ledger-cli.org/
+2. https://www.gnucash.org/
+3. https://www.youneedabudget.com/
+
+???
+
+I use CLI software. My budget software of choice is ledger-cli. This has the
+steepest learning curve but is also the most powerful and easily controlled. You
+have the option to do a lot of neat stuff using Git in combination with ledger.
+
+---
+
+# Why propose Linux over that OS that came with my hardware?
+
+- Cost
+	- Free
+- Security
+	- Open Source And Regularly Patched
+- Choice ( Freedom )
+	- Build it how you like it
+
+---
+
+# Big Names? 
+
+1. https://www.tdameritrade.com/home.page
+2. https://www.dough.com/
+3. https://www.thinkorswim.com/
+
+---
+
+# Is the time and effort worth it?
+
+Yes
+
+???
+
+You can find a holistic experience by locating the correct company and conducting your
+business in a well planned method. The right platform and tools can help you reach
+your financial goals.
