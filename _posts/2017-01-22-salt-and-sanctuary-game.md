@@ -2,7 +2,7 @@
 layout: post
 title: "Game Review - Salt & Sanctuary"
 date: 2017-01-22T15:52:43-07:00
-author: IWriteThings
+author: RetroMe
 summary: Salt & Sanctuary is an amazing video game.
 categories: gaming
 thumbnail:  fa-gamepad

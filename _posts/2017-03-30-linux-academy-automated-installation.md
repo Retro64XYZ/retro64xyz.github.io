@@ -2,7 +2,7 @@
 layout: post
 title: "Linux Academy - Automated Installation Of Linux"
 date: 2017-03-29T15:52:43-07:00
-author: IWriteThings
+author: RetroMe
 summary: >
   Linux Academy - How to install Linux using automated methods like Kickstart
   and Preconfiguration to simplify the process.
