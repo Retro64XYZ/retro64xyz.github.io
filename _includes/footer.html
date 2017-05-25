@@ -51,6 +51,28 @@
           </li>
           {% endif %}
 
+          {% if site.mastodon_username %}
+          <li>
+            <a href="https://mastodon.xyz/@{{ site.mastodon_username }}">
+              <span class="icon  icon--server">
+				  <i class="fa fa-server"></i>
+              </span>
+              <span class="username">{{ site.mastodon_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
+          {% if site.keybase_username %}
+          <li>
+            <a href="https://keybase.io/{{ site.keybase_username }}">
+              <span class="icon  icon--lock">
+				  <i class="fa fa-lock"></i>
+              </span>
+              <span class="username">{{ site.keybase_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
           {% if site.youtube_username %}
           <li>
             <a href="https://youtube.com/{{ site.youtube_username }}">
