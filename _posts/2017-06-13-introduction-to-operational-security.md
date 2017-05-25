@@ -99,6 +99,24 @@ weakness. It is a cascading failure that a compromised website gave the user
 the ability to upload an ISO, edit the page to display a different signature,
 and then distribute the infected software.
 
+The Linux Mint community has since changed their security practices and now
+provide a very thorough if not a bit complicated method to verify the integrity
+of their distribution.
+
+#### How to verify a file
+
+The first thing we need to do is verify the gpg key used to sign the
+authenticity of the sha256 at the key server.[Keys][KeyServerUbuntuURL] are
+hosted by Ubuntu and can be verified with a little bit of work.
+
+1. sha256sum
+
+#### Key Servers
+
+1. https://keyserver.pgp.com/
+2. https://pgp.mit.edu/
+3. https://sks-keyservers.net/
+
 ### No one on the internet knows you are a dog
 
 ![No One Knows You Are A Dog][UnknownDogMeme]
@@ -133,12 +151,36 @@ deserve equal focus by both the security community as well as the public. It is
 imperative that the next generation of security researchers be able to not just
 move in secrecy but provide proof of self.
 
+## A Challenge
+
+1. You will find a link to two images below. They appear to be the same. Using
+   the skills you learned today, diff them with sha256sum. The 0 image is the
+   original. The 1 image is the suspect image.
+
+2. Find the hidden difference between the files.
+
+3. Reveal the hidden message.
+
+4. Hint
+	1. VIM - Delimiter - SECRET
+	2. base64 -d (-D on mac)
+	3. Web Browser
+
 ## Final Recommendations
 
 1. Register a PGP key. Use [Keybase][KeybaseURL] if you are uncomfortable
    managing it yourself.
 
 ## Glossary
+
+1. PGP - Pretty Good Privacy provides cryptograhic privacy and authentication.
+
+2. GnuPG - Is a complete and free implementation of OpenPGP.
+
+3. Gpg4win - Is a PGP tool implementation for Windows.
+
+4. Key Server - A computer that receives and serves cryptograhic keys to users 
+   and programs.
 
 [KeybaseURL]: https://Keybase.io/ 'Crypto For Everyone - PGP As A Service'
 [CTRecordingURL]: http://archive.is/2noGW 'Threats To Children And Their Privacy'
@@ -149,3 +191,4 @@ move in secrecy but provide proof of self.
 [FakeSSLURL]: http://archive.is/rbKo4 'Fake Certificates'
 [FakeSSLURL2]: http://archive.is/KVH8a '30000 More Fake Certificates'
 [UnknownDogMeme]: /../assets/images/memes/on-the-internet-nobody-knows-youre-a-dog-meme.jpg 'Image Of Dog Sitting At Computer'
+[KeyServerUbuntuURL]: http://keyserver.ubuntu.com 'The Ubuntu Key Server'
