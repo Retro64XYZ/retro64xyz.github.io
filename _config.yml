@@ -24,6 +24,10 @@ keep_files: [assets]
 # Pagination Settings
 paginate: 5
 paginate_path: "/index/page:num"
+# Search Rules
+lunr_search:
+  js_dir: "js"
 # Gems
 gems:
-    - jekyll-paginate
+  - jekyll-paginate
+  - jekyll-lunr-js-search

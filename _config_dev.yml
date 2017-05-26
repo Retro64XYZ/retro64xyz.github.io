@@ -6,7 +6,7 @@ description: > # this means to ignore newlines until "baseurl:"
     that I want to reminisce about live. I provide high quality and impactful
     training on a wide range of topics. Sometimes I blog, vlog, and just speak
     my mind. 
-url: "http://localhost:4488/"
+url: "http://localhost:4488"
 twitter_username: Retro64XYZ
 github_username: Retro64XYZ
 mastodon_username: Retro64XYZ
@@ -27,6 +27,10 @@ keep_files: [assets]
 # Pagination Settings
 paginate: 5
 paginate_path: "/index/page:num"
+# Search Rules
+lunr_search:
+  js_dir: "js"
 # Gems
 gems:
-    - jekyll-paginate
+  - jekyll-paginate
+  - jekyll-lunr-js-search
