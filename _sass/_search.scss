@@ -1,0 +1,82 @@
+#search-form {
+  text-align:center;
+}
+
+#search-query {
+  background: #b58900;
+  border: 01px solid #000;
+}
+
+#search-results ul {
+  overflow: auto;
+  list-style-type: none;
+}
+ 
+#search-results li {
+  height: 20px;
+  float: left;
+  margin-right: 0px;
+  border-right: 1px solid #aaa;
+  padding: 0 15px;
+  font-size: small;
+}
+ 
+#search-results li:last-child {
+  border-right: none;
+}
+ 
+#search-results li a {
+  text-decoration: none;
+  color: #ccc;
+  font: 25px/1 Helvetica, Verdana, sans-serif;
+  text-transform: uppercase;
+ 
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+ 
+#search-results li a:hover {
+  color: #666;
+}
+ 
+#search-results li.active a {
+  font-weight: bold;
+  color: #333;
+}
+
+::-webkit-input-placeholder {
+  font-size: 14px;
+  color: #d0cdfa;
+  text-transform: uppercase;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+:-moz-placeholder { /* older Firefox*/
+  font-size:14px;
+  color: #d0cdfa;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
+::-moz-placeholder { /* Firefox 19+ */ 
+  font-size: 14px;
+  color: #d0cdfa; 
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+ 
+:-ms-input-placeholder { 
+  font-size: 14px; 
+  color: #d0cdfa;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: bold;
+}
+
