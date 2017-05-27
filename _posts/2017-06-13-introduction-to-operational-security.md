@@ -153,18 +153,33 @@ move in secrecy but provide proof of self.
 
 ## A Challenge
 
+How to check if two files are the same -
+
+`diff file1 file2`
+
+`sha256sum file1`
+
+`sha256sum file2`
+
 1. You will find a link to two images below. They appear to be the same. Using
-   the skills you learned today, diff them with sha256sum. The 0 image is the
-   original. The 1 image is the suspect image.
+   the skills you learned today, diff them with sha256sum. Are they different?
+
+   * [First Image][challenge00]
+   * [Second Image][challenge01]
 
 2. Find the hidden difference between the files.
 
 3. Reveal the hidden message.
 
-4. Hint
-	1. VIM - Delimiter - SECRET
-	2. base64 -d (-D on mac)
-	3. Web Browser
+* Hint
+
+  1. VIM - Delimiter - SECRET
+
+  2. base64 -d (-D on mac)
+
+  `echo 'message minus SECRET' | base64 -d`
+
+Use the secret to solve the puzzle.
 
 ## Final Recommendations
 
@@ -192,3 +207,5 @@ move in secrecy but provide proof of self.
 [FakeSSLURL2]: http://archive.is/KVH8a '30000 More Fake Certificates'
 [UnknownDogMeme]: /../assets/images/memes/on-the-internet-nobody-knows-youre-a-dog-meme.jpg 'Image Of Dog Sitting At Computer'
 [KeyServerUbuntuURL]: http://keyserver.ubuntu.com 'The Ubuntu Key Server'
+[challenge00]: /../assets/images/challenges/pgp-check/sailor-moon-floppy-disk0.jpg 'No Hidden Message'
+[challenge01]: /../assets/images/challenges/pgp-check/sailor-moon-floppy-disk1.jpg 'Has Hidden Message'
