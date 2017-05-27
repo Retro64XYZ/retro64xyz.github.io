@@ -73,6 +73,11 @@ Everything is on fire.
 
 Stop telling people every thing about yourself.
 
+[Even the military][MilTweetPDF] has had to get in on the social media game.
+They have updated their operational security products to now include Twitter
+and Facebook. You can view more at the
+[CDSE](http://www.cdse.edu/resources/posters-cybersecurity.html).
+
 ### SSL
 
 You should only communicate with sites secured by SSL. SSL provides encryption
@@ -106,12 +111,28 @@ of their distribution.
 #### How to verify a file
 
 The first thing we need to do is verify the gpg key used to sign the
-authenticity of the sha256 at the key server.[Keys][KeyServerUbuntuURL] are
+authenticity of the sha256 at the key server. [Keys][KeyServerUbuntuURL] are
 hosted by Ubuntu and can be verified with a little bit of work.
 
 1. sha256sum
 
+2. Download the sha256sum.txt file
+
+3. Download the signature for the sha file.
+
+4. Get the sha with sha256sum -b *.iso
+
+5. `gpg --keyserver keyserver.ubuntu.com --recv-key "27DE B156 44C6 B3CF 3BD7  D291 300F 846B A25B AE09"`
+
+6. or `gpg --keyserver keyserver.ubuntu.com --recv-key A25BAE09`
+
+7. `gpg --list-key --with-fingerprint A25BAE09`
+
+8. `gpg --verify sha256sum.txt.gpg sha256sum.txt` verify key used was A25BAE09
+
 #### Key Servers
+
+Other key servers exist in the world. A short list can be found below.
 
 1. https://keyserver.pgp.com/
 2. https://pgp.mit.edu/
@@ -200,6 +221,7 @@ Use the secret to solve the puzzle.
 [KeybaseURL]: https://Keybase.io/ 'Crypto For Everyone - PGP As A Service'
 [CTRecordingURL]: http://archive.is/2noGW 'Threats To Children And Their Privacy'
 [NuancePDF]: /../assets/pdf/nc_025785.pdf 'Nuance Identifier Sales PDF'
+[MilTweetPDF]: /../assets/pdf/mil_tweets.pdf 'New Military Op Sec Warning'
 [WeepingAngelURL]: http://archive.is/fD1kX 'CIA Listening Device For Smart Television'
 [WanaCryURL]: http://archive.is/2XPVU 'WanaCry using NSA tools'
 [LinuxMintHackURL]: http://archive.is/NHsxy 'Linux Mint Attack'
