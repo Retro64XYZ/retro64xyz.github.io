@@ -92,6 +92,11 @@ the internet for domains like Google as well as others. [Symantec][FakeSSLURL2]
 issued over 30,000 certificates improperly. This mishandling of SSL lead to
 companies like Google restricting their use on their Chrome browser.
 
+SSL is proof of encryption. It is not proof of ownership nor is it an assurance
+that the content is real or truthful. It is solely proof of encryption and
+should be treated as such. Even people who are hostile to you and yours can use
+encrypted communications.
+
 #### Download Assurance
 
 [Linux Mint was compromised][LinuxMintHackURL] and proved that it is entirely
@@ -134,13 +139,26 @@ hosted by Ubuntu and can be verified with a little bit of work.
 
 Other key servers exist in the world. A short list can be found below.
 
-1. https://keyserver.pgp.com/
-2. https://pgp.mit.edu/
-3. https://sks-keyservers.net/
+1. [PGP Key Server](https://keyserver.pgp.com/)
+2. [MIT Key Server](https://pgp.mit.edu/)
+3. [SKS Key Servers](https://sks-keyservers.net/)
 
 ### No one on the internet knows you are a dog
 
 ![No One Knows You Are A Dog][UnknownDogMeme]
+
+Privacy means that we are free of being observed or disturbed unless we choose
+to be. If you do not tell people information about yourself, it is very
+difficult for people to discover things about you. Websites do exist that
+provide detailed information about people through public record and eventually
+this data will need to be better managed. I estimate that within the next five
+years we will see laws put into place to curtail the availability of public
+records over the internet or in some way curb these data warehouses that
+publish private information online.
+
+Even though we have the capability to be extremely anonymous on the internet,
+sometimes we need the opposite of that behavior. It can be important for a user
+to be easily identifiable and that is where proof can be required.
 
 ### Keybase
 
@@ -150,6 +168,39 @@ applications in order to prove your ownership of specific products or to sign
 and encrypt communications. As of 05-21-2017, the Keybase website requires an
 invitation for access. You can contact users like myself over Mastodon or other
 social media for access to this project.
+
+### GPG - Build Our Key
+
+How to generate -
+
+```
+$ gpg --gen-key
+```
+
+How to generate the revocation certificate -
+
+```
+$ gpg --gen-revoke [ID_OF_KEY] > ~/.gnupg/revocation-[ID_OF_KEY].crt
+```
+
+How to send your key to a public server -
+
+```
+$ gpg --keyserver pool.sks-keyservers.net --send-key 'THE FULL KEY ID'
+```
+
+How to backup your keys -
+
+```
+$ tar -zcvf gnukeys.tar.gz .gnupg/
+```
+
+Then just save the created file somewhere secure.
+
+### GPG - Encrypt With Our Key
+
+You may want to refer to the [Debian GPG Guide][DebianKeysURL] for further
+information.
 
 ## Answers
 
@@ -227,6 +278,7 @@ Use the secret to solve the puzzle.
 [LinuxMintHackURL]: http://archive.is/NHsxy 'Linux Mint Attack'
 [FakeSSLURL]: http://archive.is/rbKo4 'Fake Certificates'
 [FakeSSLURL2]: http://archive.is/KVH8a '30000 More Fake Certificates'
+[DebianKeysURL]: https://wiki.debian.org/Keysigning 'A good guide from Debian on GPG'
 [UnknownDogMeme]: /../assets/images/memes/on-the-internet-nobody-knows-youre-a-dog-meme.jpg 'Image Of Dog Sitting At Computer'
 [KeyServerUbuntuURL]: http://keyserver.ubuntu.com 'The Ubuntu Key Server'
 [challenge00]: /../assets/images/challenges/pgp-check/sailor-moon-floppy-disk0.jpg 'No Hidden Message'
