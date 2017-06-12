@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction To Privacy"
 date: 2017-04-11T15:52:43-07:00
-author: IWriteThings
+author: RetroMe
 summary: >
   Introduction To Privacy is a two hour course that provides a rough outline of
   the tools and techniques that can be used to assist an individual in

@@ -2,7 +2,7 @@
 layout: post
 title: "How do I use Docker and XForwarding with OSX?"
 date: 2017-04-19T15:52:43-07:00
-author: IWriteThings
+author: RetroMe
 summary: >
   A short introduction to using X-forwarding with Docker in a Macintosh OSX Machine.
 categories: computers

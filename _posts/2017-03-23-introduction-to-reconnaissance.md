@@ -2,7 +2,7 @@
 layout: post
 title: "Introduction To Cyber Reconnaissance"
 date: 2017-01-22T15:52:43-07:00
-author: IWriteThings
+author: RetroMe
 summary: >
   Introduction to Cyber Reconnaissance is a two-hour course focused on
   providing learners with a gentle introduction to the tools and techniques used
