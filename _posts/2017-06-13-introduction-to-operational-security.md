@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To Operational Security"
-date: 2017-05-13T15:52:43-07:00
+date: 2017-06-11T15:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To Operational Security is a two hour course that provides an
