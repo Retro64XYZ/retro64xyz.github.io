@@ -17,6 +17,34 @@ tags:
  - phoenix linux users group
 ---
 
+## A Quick Interlude With Wannacry
+
+Wannacry affected a lot of people. Almost every country on the planet was
+affected with over 300,000 machines compromised. It took hours for developers
+to create variants as soon as the original infection began to appear. The update 
+that resolved this issue is [located here][msupdate].
+
+A [breakdown](http://archive.is/Fph0M) of the attack is available from zerosum.
+I will summarize the event as so.
+
+1. Microsoft had an exploit available in their SMB protocol since WindowsXP days.
+
+2. Find out if the computer is x86 or x64.
+
+3. Locate the .exe DOS MZ header.
+
+4. Begin the process of allocating memory.
+
+5. Find the SMB driver.
+
+6. Allocate memory and copy code for the function hook. It stores a function
+   pointer and then calls it and overwrites a member table with the hook. This
+   creates a backdoor.
+
+7. It then uses invalid SMB calls to 'knock' when it needs access. You can send
+   shellcode in a payload packet in increments of 4096 bytes. The backdoor
+   allocates executable memory, decrypts shellcode, and then runs it.
+
 ## Performance Objective
 
 At the conclusion of the course the student will be able to:
@@ -65,7 +93,7 @@ internet. Of note was the Weeping Angel attack. This attack allows individuals
 to compromise a specific model of smart television in order to use it as a
 covert spying and listening device. These tools are now being used to attack
 the public by bad actors. We will continue to see attacks like
-[WanaCry][WanaCryURL] employing NSA tools and methods.
+[WannaCry][WannaCryURL] employing NSA tools and methods.
 
 Everything is on fire.
 
@@ -77,6 +105,18 @@ Stop telling people every thing about yourself.
 They have updated their operational security products to now include Twitter
 and Facebook. You can view more at the
 [CDSE](http://www.cdse.edu/resources/posters-cybersecurity.html).
+
+##### Incidents
+
+1. [Israeli](http://archive.is/E0UZh){:target="_blank"}
+
+2. [United States](http://archive.is/2PZoo){:target="_blank"}
+
+3. [United States](http://archive.is/7tvmm){:target="_blank"}
+
+4. [The Republic Of 4Chan][4chanAirStrike1]{:target="_blank"}(Potentially Offensive Material)
+
+5. [The Republic Of 4Chan][4chanAirStrike2]{:target="_blank"}(Potentially Offensive Material)
 
 ### SSL
 
@@ -162,6 +202,8 @@ to be easily identifiable and that is where proof can be required.
 
 ### Keybase
 
+GPG / PGP as a service.
+
 [Keybase][KeybaseURL] provides powerful cryptography for every one and not just
 for hardcore programmers. You can use their website or their mobile
 applications in order to prove your ownership of specific products or to sign
@@ -197,6 +239,59 @@ $ tar -zcvf gnukeys.tar.gz .gnupg/
 
 Then just save the created file somewhere secure.
 
+### Threats
+
+There are an innumerable number of threats that could be employed to steal from
+both individual as well as business. Some of these threats include whale
+phishing as well as fraud. We will discuss them both as well as some of the
+incidents that have proven their effectiveness in the arsenal of the threat
+actor.
+
+#### Whale Phishing
+
+A specific form of phishing that targets high-profile individuals is called
+whaling. This scam is usually detailed, well planned, and executed for the sole
+purpose of causing someone with power to divulge secrets or provide money.
+This type of attack usually focuses on a call to action with urgency. An
+example may look like the following.
+
+> Retro64XYZ! The business is at risk because we forgot to pay our bill to
+> NigerianSuperConducters LLC. I know we usually pay them bi-weekly but the
+> bank forgot to clear one of our checks and now we owe a double payment. Can you
+> please send a payment of $1,800,000 to NigerianSuperBank, account number 12345,
+> routing number 54321? If we don't pay it, they will stop making the chips we
+> need and the whole business will go bust. Hurry! Also, don't call me because I
+> am obviously on vacation in Idaho where I go all the time because that is where
+> my mom lives and you know that because it is information you could find on my
+> Facebook. Pay quick!
+
+This is a silly example but it covers many bases you may see in a real whaling
+email. There is a sense of urgency due to the possibility of the business going
+bust. Do YOU want to be responsible for destroying the business? Obviously not.
+There is a quick explanation of the problem, a method of resolution, and an
+excuse for why you should do this thing now and not worry about verifying the
+information in the email. The template is simplistic but with a bit more detail
+could easily convince someone. This holds doubly true if the individual has
+ever had previous problems with the bank or distributor before. Not unheard of.
+
+### Fraud
+
+Another method of fraud is the ever popular 'invoice' scam. This one is usually
+targeted at companies or institutions and designed to attack the petty cash
+type accounts. The fraudster will create an invoice for a service or purchase
+and then send this invoice out to a large number of companies. The cost
+presented will normally be something affordable and within budget. A $250 fee
+for software or technical services is a popular one. Although, larger targets
+may require [higher invoice costs](http://archive.is/JwNn6).
+
+Facebook and Google were swindled out of $100 million dollars. An individual
+forged emails, invoices, and logos and then began the process of charging
+companies like Facebook and Google for fraudulent transfers. He spent two years
+earning over $100 million dollars from his efforts before the companies
+realized what was happening. This type of attack, also known as a B2B or
+Business To Business attack, is extremely common place and has been used
+against a multitude of victims.
+
 ### GPG - Encrypt With Our Key
 
 You may want to refer to the [Debian GPG Guide][DebianKeysURL] for further
@@ -221,7 +316,13 @@ information.
 Privacy, Anonymity, and Authorship Assurance are all important aspects and
 deserve equal focus by both the security community as well as the public. It is
 imperative that the next generation of security researchers be able to not just
-move in secrecy but provide proof of self.
+move in secrecy but provide proof of self. We cannot become so engrossed in the
+'secret squirrel' stuff that we forget the practical and useful.
+
+Some of the largest companies in the world have been victims of fraud, B2B
+attacks, and other threats. No one is immune from these incidents but training
+and experience are excellent tools in better protecting your business or
+operations from threats.
 
 ## A Challenge
 
@@ -258,6 +359,12 @@ Use the secret to solve the puzzle.
 1. Register a PGP key. Use [Keybase][KeybaseURL] if you are uncomfortable
    managing it yourself.
 
+2. Familiarize yourself with scams.
+
+3. Create a plan for dealing with emergencies. Who to contact to verify incidents?
+
+4. Encourage the use of cryptography and digital signing in business.
+
 ## Glossary
 
 1. PGP - Pretty Good Privacy provides cryptograhic privacy and authentication.
@@ -274,12 +381,15 @@ Use the secret to solve the puzzle.
 [NuancePDF]: /../assets/pdf/nc_025785.pdf 'Nuance Identifier Sales PDF'
 [MilTweetPDF]: /../assets/pdf/mil_tweets.pdf 'New Military Op Sec Warning'
 [WeepingAngelURL]: http://archive.is/fD1kX 'CIA Listening Device For Smart Television'
-[WanaCryURL]: http://archive.is/2XPVU 'WanaCry using NSA tools'
+[WannaCryURL]: http://archive.is/2XPVU 'WannaCry using NSA tools'
 [LinuxMintHackURL]: http://archive.is/NHsxy 'Linux Mint Attack'
 [FakeSSLURL]: http://archive.is/rbKo4 'Fake Certificates'
 [FakeSSLURL2]: http://archive.is/KVH8a '30000 More Fake Certificates'
 [DebianKeysURL]: https://wiki.debian.org/Keysigning 'A good guide from Debian on GPG'
 [UnknownDogMeme]: /../assets/images/memes/on-the-internet-nobody-knows-youre-a-dog-meme.jpg 'Image Of Dog Sitting At Computer'
+[4ChanAirStrike2]: /../assets/images/inserts/4chanAirStrike2.jpg '4Chan Bombathon'
+[4ChanAirStrike1]: /../assets/images/inserts/4chanAirStrike1.jpg '4Chan Bombathon'
 [KeyServerUbuntuURL]: http://keyserver.ubuntu.com 'The Ubuntu Key Server'
 [challenge00]: /../assets/images/challenges/pgp-check/sailor-moon-floppy-disk0.jpg 'No Hidden Message'
 [challenge01]: /../assets/images/challenges/pgp-check/sailor-moon-floppy-disk1.jpg 'Has Hidden Message'
+[msupdate]: http://archive.is/YnRPo 'Microsoft Update'
