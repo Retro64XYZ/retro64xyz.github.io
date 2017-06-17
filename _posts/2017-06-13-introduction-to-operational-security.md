@@ -17,6 +17,11 @@ tags:
  - phoenix linux users group
 ---
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lBH3UC8Wi54"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject"}
+</div>
+
 ## A Quick Interlude With Wannacry
 
 Wannacry affected a lot of people. Almost every country on the planet was
