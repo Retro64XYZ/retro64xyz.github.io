@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To Dark Markets"
-date: 2017-07-11T15:52:43-07:00
+date: 2017-07-10T15:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To Dark Markets is a two hour discussion on how commerce is
@@ -113,11 +113,11 @@ Costs -
 
 #### Fentanyl
 
-[$150 for 500mg Furanyl-Fentanyl][[Hansa-Fentanyl-500mg]
+[$150 for 500mg Furanyl-Fentanyl][Hansa-Fentanyl-500mg]
 
 #### Drug Testing Kits For Heroin
 
-[$8.00 for a drug testing kit][Hansa-Test-Kit]
+[$8.00 for a drug testing kit][Hansa-Testing-Kit]
 
 ### Hit Man - Not The Game
 
@@ -282,6 +282,12 @@ investigation or otherwise attacked for their use.
 ## Glossary
 
 1. PGP - Pretty Good Privacy provides cryptograhic privacy and authentication.
+
+2. FBI - An Agency that can help with human Trafficking and international narcotics rings.
+
+3. I2P - An anonymous peer-to-peer distributed communications tool.
+
+4. Freenet - An anonymous peer-to-peer distributed communications tool.
 
 [HD-Wiki]: http://hdwikicorldcisiy.onion/ 'The HD wiki'
 [Hansa-Naloxone-auto]: http://hansamkt2rr6nfg3.onion/listing/97998/ 'Hansa Market - Naloxone'
