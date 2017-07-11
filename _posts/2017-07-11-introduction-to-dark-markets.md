@@ -28,7 +28,7 @@ At the conclusion of the course the student will be able to:
 
 ## Introduction
 
-Tor, I2P, and Freenet are three seperate methods of communicating with the
+Tor, I2P, and Freenet are three separate methods of communicating with the
 internet in a private manner. Tor is the largest network and currently has the
 most number of known users. It is also one of the simpler tools to use and is
 popular with well known businesses as well as celebrities. Edward Snowden,
@@ -55,7 +55,7 @@ as the 'dark net'.
 ## A Cautionary tale
 
 Secret Service Agent Shaun Bridges stole $800,000 worth of bitcoins from the
-Silk Road. He was arrested, pled guilty, and then laundered and stole the money
+Silk Road. He was arrested, plead guilty, and then laundered and stole the money
 from an account only he had access to. This is a strong indicator that law
 enforcement is not yet familiar with the way that bitcoin and other
 cryptocurrency works. The Secret Service had ordered that the wallet that Shaun
@@ -84,14 +84,14 @@ to thrive, and sales are continuing to rise.
 
 ### Fentanyl
 
-Fentanyl is an opiod. Opiods include codeine, hydrocodone, morphene, oxycodone,
-and heroin. Fentanyl is extremely dangerous and is capable of causing an
-overdose with only a very small amount. Carfentanil is an analog of Fentanyl
-but is prescribed to tranquilize elephants. Even a small dose can be deadly to
-someone exposed to it. A single kilogram of carfentanil contains enough doses
-to kill 50 million people if administered to each person individually. It is
-extremely dangerous to human beings and some are now comparing this narcotic to
-tools like nerve gas. It could easily be weaponized.
+Fentanyl is an opioid. Opioids include codeine, hydrocodone, morphine,
+oxycodone, and heroin. Fentanyl is extremely dangerous and is capable of
+causing an overdose with only a very small amount. Carfentanil is an analog of
+Fentanyl but is prescribed to tranquilize elephants. Even a small dose can be
+deadly to someone exposed to it. A single kilogram of carfentanil contains
+enough doses to kill 50 million people if administered to each person
+individually. It is extremely dangerous to human beings and some are now
+comparing this narcotic to tools like nerve gas. It could easily be weaponized.
 
 The drug Naloxone is administered to individuals overdosing on Fentanyl. There
 is no amount of Naloxone that can save an individual overdosing on carfentanil.
@@ -129,11 +129,11 @@ successful over Tor. This is probably one of the top scams on Tor.
 
 ### Prostitutes & Pornography
 
-Human traficking, sex trade, and pornography are all powerfully present on the
+Human trafficking, sex trade, and pornography are all powerfully present on the
 dark net. Drugs and sex are two of the easiest to find vices available over the
 internet. Individuals are using these underground markets to traffic in slaves
 as well. Human slavery with a strong emphasis on sexual slavery has returned in
-force to Europe with the rise of emmigration and the flood of men coming into
+force to Europe with the rise of immigration and the flood of men coming into
 these countries. It is not difficult to find companies selling slaves as young
 as eight years of age with the majority being of a different ethnicity than the
 country they are available in.
@@ -156,6 +156,11 @@ today. You either must locate a grouping of links provided in trade, be
 recommended a place, or work to find a site being advertised through search
 engines.
 
+There are plenty of websites on the dark net including
+[8CHAN](http://vichandcxw4gm3wy.onion/) as well as others. It is good sense to
+provide an onion routed method for access to your web site and I encourage more
+businesses and individuals to add to the network with this tool set.
+
 ## Email?
 
 Yes. There are email services that work within Tor.
@@ -169,15 +174,15 @@ believe that any provider of anonymous services is immune from compromise.
 
 ## Onion Routing
 
-Onion routing is a method by which communication over the internet is layed in
-encryption. This encrypted data is then transmitted through a series of network
-nodes called onion routers, where each layer is peeled away in order to reveal
-the next destination of the data. The final layer is decrypted when the message
-is delivered to the destination. Anonymous travel of the data is made because
-the intermediary transfer node will only know the location of the node
+Onion routing is a method by which communication over the internet is layered
+in encryption. This encrypted data is then transmitted through a series of
+network nodes called onion routers, where each layer is peeled away in order to
+reveal the next destination of the data. The final layer is decrypted when the
+message is delivered to the destination. Anonymous travel of the data is made
+because the intermediary transfer node will only know the location of the node
 immediately preceding or following it in the node.
 
-Onion routing was originaly developed by the U.S. Naval Research Laboratory to
+Onion routing was originally developed by the U.S. Naval Research Laboratory to
 protect United States intelligence communications. It was then transferred to
 DARPA. Eventually this evolved into Tor after the code for onion routing was
 made free in license and some of the original developers founded a non-profit
@@ -186,7 +191,7 @@ organization with the financial support of the EFF.
 ### What is an onion?
 
 .onion is a special use top level domain for reaching hidden services held in
-the Tor network. The .onion address wil generally not be mnemonic (not a word)
+the Tor network. The .onion address will generally not be mnemonic (not a word)
 and is 16 characters long. Some groups can however create semi-readable names
 with the use of heavy power servers. Due to the ability to strip SSL from sites
 going out through an exit node, it can provide additional security for a site
@@ -224,9 +229,9 @@ vulnerability is mitigated with the use of HTTPS or SSL. Tor is not a
 replacement for end-to-end encryption but is a supplement.
 
 The largest threat to a Tor user is the browser or client machine itself. The
-vast majority of successful attacks have been conducted by exploting
+vast majority of successful attacks have been conducted by exploiting
 vulnerabilities found in Firefox or the computer running the Tor browser
-itself. Javascript, Flash, and comrpomised files - while traditionally used for
+itself. Javascript, Flash, and compromised files - while traditionally used for
 normal attacks - are still highly effective against users of Tor. Some users
 may even believe themselves to be invulnerable to attack due to their use of
 Tor. This is false and traditional methods of attack are still highly
@@ -248,7 +253,19 @@ effective.
 
 ## Conclusion
 
-Privacy, Anonymity, and Authorship Assurance are all important aspects and
+The Dark Net is a valuable tool to fight censorship, assemble, and to spread
+important information. It has a place in the tool chest of any security
+researcher or individual concerned with freedom of speech. It cannot be
+emphasized enough that we should each be contributing as we can to the creation
+of a decentralized and free internet. Every one should contribute in some way
+to improving the internet by providing websites over Tor, relay nodes, or even
+exit nodes if they are of sufficient skill to do so.
+
+In addition, members of the community should be working together to develop
+stronger bonds with the public as well as building and developing a less crime
+focused dark net. We should be building up the community necessary for
+individuals to thrive on Tor without the fear of being swept up in an
+investigation or otherwise attacked for their use.
 
 ## Final Recommendations
 
@@ -274,7 +291,3 @@ Privacy, Anonymity, and Authorship Assurance are all important aspects and
 [Hansa-Fentanyl-500mg]: http://hansamkt2rr6nfg3.onion/listing/25284/ 'Hansa Market - Fentanyl'
 [Hansa-Testing-Kit]: http://hansamkt2rr6nfg3.onion/listing/95135/ 'Hansa Market - Testing Kit'
 
-http://hdwikicorldcisiy.onion/ HD Wiki
-https://www.reddit.com/r/onions/ Onions
-https://www.reddit.com/r/DarkNetMarkets/ Darknet Markets
-http://vichandcxw4gm3wy.onion/pol/ 8Chan
