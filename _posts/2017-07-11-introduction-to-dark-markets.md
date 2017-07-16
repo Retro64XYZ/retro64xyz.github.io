@@ -26,6 +26,11 @@ At the conclusion of the course the student will be able to:
 3. Identify what the TLD .onion is.
 4. Identify how to generate a .onion TLD.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LFX4YCdSKyk"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject"}
+</div>
+
 ## Introduction
 
 Tor, I2P, and Freenet are three separate methods of communicating with the
