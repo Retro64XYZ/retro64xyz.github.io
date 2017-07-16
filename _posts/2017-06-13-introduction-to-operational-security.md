@@ -56,6 +56,11 @@ At the conclusion of the course the student will be able to:
 5. Understand when to sign communication.
 6. Understand what threats prey on trust issues.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/lBH3UC8Wi54"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject"}
+</div>
+
 ## Introduction
 
 Privacy is the buzz word of the day. There is a dire concern that every person
