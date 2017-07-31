@@ -7,7 +7,7 @@ permalink: /presentations/
 These are my presentations.
 
 <ul>
-  {% for post in site.categories.presentations %}
+  {% for post in site.categories.computers %}
     {% if post.url %}
       <li><a href="{{ post.url }}">{{ post.title }}</a></li>
     {% elsif post.url == 0 %}
