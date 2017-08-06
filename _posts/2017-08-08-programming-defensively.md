@@ -55,6 +55,54 @@ determined hackers.
 
 ### Buffer Overflow
 
+[The metasploit for eternalblue][EternalBlueMetasploit] is a very good example
+of how one could take advantage of a buffer overflow state.
+
+> There is a buffer overflow memmove operation in Srv!SrvOs2FeaToNt. The size
+> is calculated in Srv!SrvOs2FeaListSizeToNt, with mathematical error where a
+> DWORD is subtracted into a WORD. The kernel pool is groomed so that overflow
+> is well laid-out to overwrite an SMBv1 buffer. Actual RIP hijack is later
+> completed in srvnet!SrvNetWskReceiveComplete.
+
+What is [memmove](http://www.cplusplus.com/reference/cstring/memmove/)?
+
+> Copies the values of num bytes from the location pointed by source to the
+> memory block pointed by destination. Copying takes place as if an
+> intermediate buffer were used, allowing the destination and source to
+> overlap.
+>
+> The underlying type of the objects pointed by both the source and destination
+> pointers are irrelevant for this function; The result is a binary copy of the
+> data.
+>
+> The function does not check for any terminating null character in source - it
+> always copies exactly num bytes.
+>
+> To avoid overflows, the size of the arrays pointed by both the destination
+> and source parameters, shall be at least num bytes.
+
+A DWORD is 32 bit. A WORD is 16 bit. This is where our overflow happens.
+
+#### What is a pointer?
+
+A pointer is used to assign the memory address value of a variable to a
+variable. You could potentially access the memory address in C using the `&`
+symbol.
+
+```
+int main() {
+	int var1;
+	printf("The address of var1 is: %x\n", &var1);
+	return 0;
+}
+```
+
+The above code could return something like -
+
+The address of var1 is: bff5a200
+
+#### The Buffer
+
 A buffer overflow happens when software tries to continue writing past the
 start or end of the buffer. A buffer overflow or buffer underflow happens in
 either the stack or the heap. When a problem in the buffer occurs the software
@@ -64,8 +112,8 @@ execution.
 
 #### Very Important Concepts About The Buffer
 
-* The stack and the heap both reside in the RAM of the computer running the
-  code.
+* The stack and the heap both reside in the RAM/Disk of the computer running
+  the code.
 
 * The stack is a Last In First Out data storage space that is built to handle
   a single call to a function, block, method, or the equivalent object.
@@ -80,7 +128,7 @@ void stackFunction() {
   application is running. You MUST delete data in an explicit manner if you
   create it on the heap or you will create a memory leak.
 
-```C
+```
 void heapFunction() {
 	Counter *d = new Counter();
 	delete d;
@@ -148,9 +196,7 @@ more privileges. The individuals attack your software, systems, or accounts are
 usually looking for some way to gain permissions to perform Create, Read,
 Update, or Delete actions for nefarious purposes. 
 
-### Weak Crypto / Weak Authorization Methods / Poor Planning
-
-#### Crypto
+### Weak Crypto
 
 Implementing cryptographic tools is hard. It is very easy to make a serious
 mistake when trying to implement encryption algorithims and secure data. Even
@@ -159,7 +205,7 @@ have been released into the wild using weak crypto and have been proven easy to
 defeat. Some variants of these attacks have been defeated and data recovered
 without any payment made.
 
-#### Social Engineering
+### Social Engineering
 
 Educating the users while providing a simple to use interface that explains to
 the user are the combination to needed to help users protect themselves and
@@ -177,7 +223,7 @@ Users should also be warned during use of the software. They may be informed
 about the dangers with tool tips or text made available to explain that at all
 times they should be cognizant of hackers or bad actors.
 
-#### Failure To Expect Attacks
+### Failure To Expect Attacks
 
 Many companies simply do not expect to come under attack. There is a severe
 lack of education in the cyber security field and many individuals do not
@@ -187,7 +233,28 @@ when'. Users should not be made to feel hopeless but instead empowered.
 
 ## Software Development For Penetration Testers
 
+There are numerous applications used for penetration testing and security
+related work. I have curated a small list from different sources here.
+
+1. [German Python List][PythonPenTestTools]
+2. [The PenTesters Framework][PenTestersFramework]
+3. [Awesome List Of Github Things][AwesomeListOfThings]
+4. [Awesome Pen Testing Tools][AwesomePenTest]
+
 ## Jobs That Need Software Developers
+
+Many cyber security related positions or jobs require the possession of some
+kind of security clearance. As is common in many aspects of cyber security,
+security theatre is more important than the skill sets or capabilities of those
+involved. Reality Winner, the NSA Contractor who leaked information from the
+government to the news was a possessor of a clearance who was also a 'self
+proclaimed resistor and Bernie Sanders supporter'.
+
+Many HR offices do not know that the jobs they are trying to fill can use a
+software security person or programmer on their team. The idea that a
+programmer can help in many different functions is foreign to many of these
+individuals. There seems to be a serious disconnect in how computing is treated
+in this day and age.
 
 ## Developing Developer Skills
 
@@ -195,6 +262,42 @@ when'. Users should not be made to feel hopeless but instead empowered.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/KMU0tzLwhbE"
 	frameborder="0" allowfullscreen></iframe>
 </div>
+
+There are an inordinate amount of resources today that are available to
+aspiring coders. A small list of websites that can help you learn will be
+included here.
+
+1. [Learn-C](http://www.learn-c.org/)
+2. [Udemy](https://www.udemy.com/c-programming-for-beginners/)
+3. [Toptal](https://www.toptal.com/c/the-ultimate-list-of-resources-to-learn-c-and-c-plus-plus)
+4. [Tutorial Point](https://www.tutorialspoint.com/cprogramming/)
+5. [Lynda](https://www.lynda.com/) -- Free with a library card in Chandler
+6. [Vim Adventures](https://vim-adventures.com/)
+7. [Rails For Zombies](http://railsforzombies.org/)
+8. [Checkio](https://checkio.org/)
+9. [Code Combat](https://codecombat.com/)
+
+## You Can Still End Up In Trouble
+
+Do you remember [Marcus Hutchins][Hutchins1]? The security researcher who
+'stopped' WannaCry? He was recently arrested at DefCon 2017 and charged for
+creating a credit card stealing application called [Kronos][Hutchins2]. He is
+being accused of the creation and distribution of tools being used to steal
+bank account information, accessing and damaging computers he is not authorized
+to use, and wiretapping. 
+
+Marcus became famous after he 'stopped' Wannacry from his parents home. He
+registered a website and the Wannacry application fell dormant. Here is a
+conspiracy theory. Marcus may have had more knowledge about Wannacry than
+previously thought, registered the website due to concern about the number of
+hospitals hit, and someone turned him over to authorities for his work with
+Kronos.
+
+Kronos was sold on the AlphaBay and Hansa dark web markets. AlphaBay and Hansa
+were both government run honey pots appropriated as part of a massive take
+down. [The sites were part of a massive law enforcement
+operation][AlphaTakeDown] and only a short while after the arrests begin,
+Hutchins is swooped upon. It is an interesting thought exercise.
 
 ## Answers
 
@@ -212,14 +315,46 @@ when'. Users should not be made to feel hopeless but instead empowered.
 
 ## Conclusion
 
-The Dark Net is a valuable tool to fight censorship, assemble, and to spread
+Software development skills are invaluable for security researchers, network
+engineers, and more. The number of jobs that do not include or necessitate
+software engineering are going to continue to shrink over the coming years. The
+capability to function with at least one traditional programming language and
+one scripting language will be the bare minimum necessary to succeed in
+computer related fields.
+
+Understanding how software works, who is writing that software, and how that
+software is used is important to any one concerned about security. Closed off
+source code and walled off systems must be removed from the landscape. Even
+with software becoming increasingly open source, we must also do actual code
+reviews and frequently check for issues. Few people, if any, have checked every
+line of code in the Linux Kernel. We must gain the skills necessary to begin
+checking for vulnerabilities.
 
 ## Final Recommendations
 
 1. Use Linux! 
 
+2. Learn a programming language and a scripting language. Skills cross!
+
+3. Register a Github and contribute to projects.
+
+4. Pay attention to what software you are using. Choose Open Source. 
+
 ## Glossary
 
 1. Memory Leak - Previously allocated memory is not deallocated by the programmer. 
+2. Pointer - A pointer is an object which points to another value stored in
+   memory by the memory address assigned.
+3. Crypto - Shorthand for Cryptography. The study and implementation of secure
+   communication.
+4. Buffer - The temporary placeholder in memory where data is dumped.
+5. Stack - The data structured used to store data in a particular order. Last In First Out.
 
-[Hansa-Testing-Kit]: http://hansamkt2rr6nfg3.onion/listing/95135/ 'Hansa Market - Testing Kit'
+[PythonPenTestTools]: https://github.com/dloss/python-pentest-tools 'Curated Github List'
+[PenTestersFramework]: https://github.com/trustedsec/ptf 'An installation script for pentesting tools'
+[AwesomeListOfThings]: https://github.com/sindresorhus/awesome#security 'Curated list of Github Stuff'
+[AwesomePenTest]: https://github.com/enaqx/awesome-pentest 'Curated Pentest Tools'
+[Hutchins1]: http://archive.is/wFXKE 'Marcus Hutchins Arrested'
+[Hutchins2]: http://archive.is/btC65 'Marcus Hutchins Charges'
+[AlphaTakeDown]: http://archive.is/YezFG 'AlphaBay and Hansa taken down'
+[EternalBlueMetasploit]: https://github.com/rapid7/metasploit-framework/blob/master/modules/exploits/windows/smb/ms17_010_eternalblue.rb
