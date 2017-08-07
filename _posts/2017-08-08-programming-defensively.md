@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To Defensive Programming"
-date: 2017-07-10T15:52:43-07:00
+date: 2017-08-05T15:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To Defensive Programming is a two hour course focused on
@@ -170,7 +170,7 @@ for ( int i = 0; i < 10000000; i++ ) {
 }
 ```
 
-If you have two threads attempting to access the below code, you can quickly
+If you have two threads attempting to access the above code, you can quickly
 enter a race condition. The problem occurs as the threads involved can be at
 any point in the process at any time. It is even possible for x to be changed
 in the between time of reading x and writing x.
@@ -190,17 +190,17 @@ introduced.
 I believe I can safely assume that any one reading this document will be
 familiar with the act of access control. If you have ever logged into a website
 or registered an account with a company, you will have participated in the
-access control life cyle. The vast majority of discussion of security
+access control life cycle. The vast majority of discussion of security
 vulnerabilities is in terms of privilege and the exploits necessary to gain
-more privileges. The individuals attack your software, systems, or accounts are
-usually looking for some way to gain permissions to perform Create, Read,
+more privileges. The individuals who attack your software, systems, or accounts
+are usually looking for some way to gain permissions to perform Create, Read,
 Update, or Delete actions for nefarious purposes. 
 
 ### Weak Crypto
 
 Implementing cryptographic tools is hard. It is very easy to make a serious
-mistake when trying to implement encryption algorithims and secure data. Even
-the bad guys have learned that cryptography is hard. Varians of cryptolocker
+mistake when trying to implement encryption algorithms and secure data. Even
+the bad guys have learned that cryptography is hard. Variants of cryptolocker
 have been released into the wild using weak crypto and have been proven easy to
 defeat. Some variants of these attacks have been defeated and data recovered
 without any payment made.
@@ -217,7 +217,7 @@ email. Valuable data should be shared using agreed upon and secure methods.
 Consider a system in which no social security number is to ever be repeated
 over the phone or through email. Transport of that data should be made through
 a system that distributes the data in a secure manner to a secure channel. Can
-it still be exfiltrated? Yes. But the difficult level is now much higher.
+it still be exfiltrated? Yes. But the difficulty level is now much higher.
 
 Users should also be warned during use of the software. They may be informed
 about the dangers with tool tips or text made available to explain that at all
@@ -228,7 +228,7 @@ times they should be cognizant of hackers or bad actors.
 Many companies simply do not expect to come under attack. There is a severe
 lack of education in the cyber security field and many individuals do not
 understand that there is a level of security that can be gained with education
-and due dilligence. There is a disservice in the security mantra of 'not if but
+and due diligence. There is a disservice in the security mantra of 'not if but
 when'. Users should not be made to feel hopeless but instead empowered.
 
 ## Software Development For Penetration Testers
