@@ -26,6 +26,11 @@ At the conclusion of the course the student will be able to:
 3. Identify and describe the three teams involved in hacking and their role.
 4. Identify and describe tools used in the probing aspect of the hacking timeline.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/E7p3YknyVwo"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject"}
+</div>
+
 ## Why Hack?
 
 1. Fame
