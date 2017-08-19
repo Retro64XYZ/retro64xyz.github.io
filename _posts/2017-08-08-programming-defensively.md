@@ -36,6 +36,11 @@ At the conclusion of the course the student will be able to:
 
 5. What does DRY stand for?
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XalFzs1WFYA"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject" }
+</div>
+
 ## Introduction
 
 Software development and security are intertwined concepts. Your hardware is
