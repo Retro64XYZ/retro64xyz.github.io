@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To Defensive Databasing"
-date: 2017-08-05T15:52:43-07:00
+date: 2017-10-10T07:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To Defensive Databasing is a two hour course focused on
@@ -34,29 +34,33 @@ Many modern breaches involve databases. We regularly hear about leaks, vulnerabl
 
 A Small List from 2017 -
 
-1. WordPress Plugins (300,000+ sites)
-2. Illinois State Board Of Elections (Voter Registration System)
-3. Joomla
-4. Web Forums (65000+ Accounts at an Airsoft site alone)
-5. Moodle
-6. McAfee ePolicy Admin Console
-7. US Election Commision Voting Machines
+1. [WordPress Plugins (300,000+ sites)](http://archive.is/r51QA)
+2. [Illinois State Board Of Elections (Voter Registration System)](http://archive.is/HJW0Z)
+3. [Joomla](http://archive.is/DgzTR)
+4. [Web Forums (65000+ Accounts at an Airsoft site alone)](http://archive.is/Yqxb5)
+5. [Moodle](http://archive.is/SUu4g)
+6. [McAfee ePolicy Admin Console](http://archive.is/0c787)
+7. [US Election Commision Voting Machines](http://archive.is/5qrcA)
+
+Also check out [the wall of shame](http://codecurmudgeon.com/wp/sql-injection-hall-of-shame/) for
+more interesting mistakes.
 
 ## Servers
 
 The most popular SQL servers are -
 
-1. Oracle
-2. MySQL
-3. Microsoft SQL Server
-4. PostgreSQL
-5. IBM DB2
+1. [Oracle](https://www.oracle.com/database/index.html)
+2. [MySQL or MariaDB](https://mariadb.org/)
+3. [Microsoft SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-2016)
+4. [PostgreSQL](https://www.postgresql.org/)
+5. [IBM DB2](https://www.ibm.com/analytics/us/en/db2/)
 
 It is very important that you figure out which server is being employed by your
 target. This should be one of your top goals as you begin the process of
 executing an attack. Each server will have both minor as well as major
 differences in syntax and function that will require specific changes in
-behavior when attempting to exploit flaws.
+behavior when attempting to exploit flaws. We must also keep in mind
+some of the differences in license we can run into as well.
 
 ## Risks
 
@@ -76,6 +80,11 @@ working on the application. It should be understood however that many modern
 frameworks now provide many of these tools as baked in tools. While it is
 possible to simply pass a raw SQL query without any form of parameterization,
 it can now require more effort to do it wrong than right.
+
+A [cheat sheet](https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet)
+is available for anyone interested in learning more about SQL injection. The 
+[Open Web Application Security Project](https://www.owasp.org/index.php/Main_Page)
+is a great tool for learning about cyber security.
 
 ### Parameterized Queries
 
@@ -146,11 +155,16 @@ already been deployed.
 
 Automated testing is far superior to manual inspection.
 
-Tools include N-Stealth, Web Vulnerability Scanner, SPI Web Inspect, and Wikto.
+Tools include N-Stealth, Web Vulnerability Scanner, SPI Web Inspect, and Nikto.
 These are just a handful of tools that can be used to automate the testing of
 your application. It is also possible to create a testing path that is used in
 conjunction with continous integration to automatically monitor for
 vulnerabilities every time you push the application an update.
+
+1. [N-Stealth](https://www.nstalker.com/products/editions/free/)
+2. [Nikto](https://github.com/sullo/nikto)
+3. [Web Inspect](http://searchsecurity.techtarget.com/magazineContent/SPI-Dynamics-WebInspect-61-Product-Review)
+4. [CI](http://archive.is/Ym0fT)
 
 ## Answers
 
@@ -176,7 +190,7 @@ potentially find some kind of vulnerability in your application or project. It
 is not an excuse or a blessing that allows a developer to ignore best
 practices. You must develop your software in the most secure method possible
 while using all the tools available to mitigate the threat. You should not
-ignore security because it is an up hill battle.
+ignore security just because it is an up hill battle.
 
 ## Final Recommendations
 
