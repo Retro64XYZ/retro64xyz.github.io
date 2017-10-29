@@ -28,6 +28,11 @@ At the conclusion of the course the student will be able to:
 4. Identify one tool used in PHP to prevent SQL injection.
 5. Identify an organization that teaches about SQL injection.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y2_aWjLpsbs"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject" }
+</div>
+
 ## Introduction
 
 Many modern breaches involve databases. We regularly hear about leaks, vulnerable software, and companies who were not following best practices being hit by such a basic hack. Why? What kind of software is being written that includes SQLi vulnerabilities?
