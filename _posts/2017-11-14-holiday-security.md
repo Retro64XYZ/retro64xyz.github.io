@@ -26,7 +26,7 @@ At the conclusion of the course the student will be able to:
 
 2. Identify a method to stay out of trouble spots during the holiday.
 
-3. Identify three ways to make the most of your money this season.
+3. Identify a way to make the most of your money this season.
 
 4. Identify what a skimmer is.
 
