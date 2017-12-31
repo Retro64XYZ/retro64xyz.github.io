@@ -32,6 +32,11 @@ At the conclusion of the course the student will be able to:
 
 5. Identify a method to easily spot scams.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7dQ89Y9FkMg"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject" }
+</div>
+
 ## Introduction
 
 Holiday times are a perfect opportunity to find deals on products, shop, and
