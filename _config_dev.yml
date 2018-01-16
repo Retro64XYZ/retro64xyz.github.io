@@ -31,6 +31,6 @@ paginate_path: "/index/page:num"
 lunr_search:
   js_dir: "js"
 # Gems
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-lunr-js-search
