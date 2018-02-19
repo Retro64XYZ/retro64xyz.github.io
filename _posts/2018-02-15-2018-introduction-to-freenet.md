@@ -61,7 +61,7 @@ fear of being punished or ostracized by the group.
 
 Freenet is one tool that can be employed to enhance your privacy, give you a
 platform to publish on, and to contribute to global discourse. It is not a tool
-for surfing the clear net. You should not use Freenet if you main goal is to
+for surfing the clear net. You should not use Freenet if your main goal is to
 post on Facebook, surf Youtube, or use tools like GMAIL. Freenet is for
 individuals interested in contribution and discussion.
 
@@ -183,7 +183,7 @@ the internet for a period of time.
 [The communications act][killswitch] gives the President unlimited power to
 shutdown the internet. The United States began developing a method to shut down
 communications within the US shortly after the Arab Spring as the power wielded
-by activists on Facebook and Twitter desmonstrated the danger of allowing
+by activists on Facebook and Twitter demonstrated the danger of allowing
 unfettered access to these tools during an uprising.
 
 ### Digital
@@ -234,7 +234,7 @@ down.
 [Childs Play][auscp] was run by Australian Law Enforcement.
 
 [The Black Ice Project(PDF)][blackice]{:target="_blank"} made the claim that
-Freenet users could be compromised using a convuluted method to reveal the
+Freenet users could be compromised using a convoluted method to reveal the
 systems used to store specific data. The Freenet project has refuted the claims
 made and the [source code][blackicefalse] shows that their method is flawed or
 a fabrication.
@@ -247,7 +247,7 @@ a fabrication.
 >they've come up with is "hey, we're stumped so lets just lie to the courts
 >about this and hope that no one catches on".
 
-While there is undoubtably illegal content on Freenet, it is much rarer. The
+While there is undoubtedly illegal content on Freenet, it is much rarer. The
 lack of server side processing, databases, and the ability to use the tools
 available to turn a profit are all major turn offs for those individuals
 attempting to conduct illicit business. You are more likely to find ramblings,
@@ -307,7 +307,7 @@ deserve the right to hold an unpopular opinion, to ask questions, and to learn.
 No single group should hold a monopoly over discussion.
 
 You can help build the future of communication by being an advocate for
-freespeech, anonymous networks, and open and civil discourse. We should not
+free speech, anonymous networks, and open and civil discourse. We should not
 allow our differences to become a muzzle. We must contribute to the health and
 welfare of the internet in order to reduce the chance that we will one day
 discover ourselves unable to use it. Don't allow the internet to become 'The
