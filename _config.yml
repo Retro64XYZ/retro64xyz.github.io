@@ -10,7 +10,8 @@ twitter_username: Retro64XYZ
 github_username: Retro64XYZ
 mastodon_username: Retro64XYZ
 keybase_username: Retro64XYZ
-# youtube_username: my_youtube
+youtube_display: Retro64XYZ
+youtube_username: 'channel/UC8dI8JKzbheHlaGhUGxIV1w?disable_polymer=true'
 
 # Build settings
 markdown: kramdown

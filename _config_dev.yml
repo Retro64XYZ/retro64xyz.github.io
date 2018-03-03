@@ -13,7 +13,8 @@ mastodon_username: Retro64XYZ
 keybase_username: Retro64XYZ
 #email_display: Retro64XYZ
 #email_sendto: example@example.com
-# youtube_username: my_youtube
+youtube_display: Retro64XYZ
+youtube_username: 'channel/UC8dI8JKzbheHlaGhUGxIV1w?disable_polymer=true'
 
 # Build settings
 markdown: kramdown
