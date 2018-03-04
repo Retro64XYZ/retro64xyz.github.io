@@ -79,10 +79,22 @@
               <span class="icon  icon--youtube">
 				  <i class="fa fa-youtube"></i>
               </span>
-              <span class="username">{{ site.youtube_username }}</span>
+              <span class="username">{{ site.youtube_display }}</span>
             </a>
           </li>
           {% endif %}
+
+          {% if site.twitch_username %}
+          <li>
+            <a href="https://twitch.tv/{{ site.twitch_username }}">
+              <span class="icon  icon--twitch">
+				  <i class="fa fa-twitch"></i>
+              </span>
+              <span class="username">{{ site.twitch_username }}</span>
+            </a>
+          </li>
+          {% endif %}
+
 
         </ul>
       </div>
