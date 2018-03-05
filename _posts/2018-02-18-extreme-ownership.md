@@ -204,8 +204,8 @@ vocal, explanatory, as well as thorough. They believe you can inspire
 confidence through communication. I agree but I have also spoken to leaders who
 have told me in no uncertain terms that sometimes it is best that the higher
 ups simply not be aware of the intricacies of the operation. We should be
-be careful and cautious in what is shared. I think both are applicable. You can
-explain your thought process, you intentions, and you recipe for success
+careful and cautious in what is shared. I think both are applicable. You can
+explain your thought process, you intentions, and your recipe for success
 without interjection of superfluous information. Don't include in the brief
 what should be handled at the line level.
 
