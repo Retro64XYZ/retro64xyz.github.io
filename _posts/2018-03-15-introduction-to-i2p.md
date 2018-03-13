@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To I2P"
-date: 2018-02-11T15:52:43-07:00
+date: 2018-03-13T15:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To I2P is a two-hour course designed to provide an
@@ -38,15 +38,39 @@ I recommend watching the [I2P Con 2015 Playlist.][i2pcon] There were plans for
 a 2016 I2P Con but it does not appear to have come to fruition. There are no
 other I2P-centric conventions as far as I know.
 
+I did speak to users on the IRC chat room for #i2p-dev and was provided some
+excellent information from the developers. This talk was reviwed by the I2P
+staff and a request to confirm facts was made. No changes in content were
+solicited or made due to reputation or any other concerns.
+
+```
+│09:53:57       i2pr | [Irc2P/psi] some important notes to add, i2p is a network layer, it provides an anonymous layer 3    │
+│                    | (on the osi stack)                                                                                   │
+│09:54:10       i2pr | [Irc2P/psi] no one else does that as far as i have seen                                              │
+│09:54:48       i2pr | [Irc2P/psi] i2p can do anonymous anycast too, like 1 destination in multiple servers                 │
+│09:54:58 Retro64XYZ | psi: That network layer is what simplifys connection of so many tools into the i2p network; am I     │
+│                    | correct in saying that?                                                                              │
+│09:55:01       i2pr | [Irc2P/psi] which again, no one else can do as far as i have seen :^)                                │
+│09:55:15       i2pr | [Irc2P/psi] not quite                                                                                │
+│09:55:26       i2pr | [Irc2P/psi] it makes the network harder to optimize                                                  │
+│09:55:39       i2pr | [Irc2P/psi] but it gives a LOT of flexibility to app developers                                      │
+│09:56:12       i2pr | [Irc2P/psi] idk if it makes it simpler, it's just different                                          │
+│09:58:56       i2pr | [Irc2P/psi] also due to lack of regular funding our product is a bit lack luster compared to tor     │
+│09:59:13       i2pr | [Irc2P/psi] we don't have money to pay devs to maintain a browser                                    │
+│09:59:27       i2pr | [Irc2P/psi] it's mostly randos in their spare time                                                   │
+│09:59:41       i2pr | [Irc2P/psi] (more randos desired)                                                                    │
+│09:59:49       i2pr | [Irc2P/psi] we need more of everything (tm)
+```
+
 ## How does I2P Work
 
 I2P functions with several essential concepts. The first is the strict
-seperation between software (router) and endpoint (destination). The act of
+separation between software (router) and endpoint (destination). The act of
 running I2P is not a secret usually. The activity being participated in and the
 destination of that activity is the hidden information that is being protected
 by I2P. The second important concept is the tunnel. The tunnel is the
 connection being made from one computer to another within the I2P network. All
-tunnelling is performed in a unidirectional manner. You have outbound tunnels
+tunneling is performed in a unidirectional manner. You have outbound tunnels
 and inbound tunnels. The first computer, client or server, is usually referred
 to as the gateway.
 
@@ -110,7 +134,7 @@ excellent documentation provided by the I2P project.
 
 ## How To Setup
 
-Setting up I2P can be ramarkably simple. You will install the application and
+Setting up I2P can be remarkably simple. You will install the application and
 then connect to it as you would with some thing like Freenet. Configuration is
 also fairly simple to start with. Properly opening the port for your connection
 in your firewall is one of the more difficult tasks. Your main goal is to make
@@ -131,14 +155,18 @@ that Tor development began. At some point, jrandom vanished and the entire
 project very nearly came to a crashing halt. Over time, it was salvaged and the
 I2P project was able to continue development.
 
+Unsubstantiated claims that jrandom was a Chinese national now being held in a
+prison in mainland China have been made but no facts available currently back
+up these claims. An interesting rumor none the less. 
+
 ## What does I2P do
 
 The initial purpose of the Invisible Internet Project was to provide a secure
 and anonymous method to communicate with users over IRC. I2P evolved from the
-Inivisible Internet Project and is now intended to provide anonymous
+Invisible Internet Project and is now intended to provide anonymous
 peer-to-peer communication for Usenet, email, IRC, file sharing, web hosting
 (http) and telnet. The real purpose of I2P is to provide an anonymous network
-layer so that other software can intetact through the I2P protocol.
+layer so that other software can interact through the I2P protocol.
 
 ## Garlic Versus Onion
 
@@ -215,8 +243,8 @@ Due to my training and experience, I do not believe that it is possible for
 Linus Torvalds to have refused the American Government if they did seriously
 proposition him for a back door into the kernel. I also am a strong believer
 that no one person has complete understanding of the kernel and all intricacies
-and therefore it is impossible at this point to claim that there are absolutely
-no flaws being exploited in the wild.
+involved. Therefore it is impossible at this point to claim that there are
+absolutely no flaws being exploited in the wild.
 
 If Linus Torvalds was 'joking' when he decided to admit to being propositioned
 for a backdoor, I feel it was in bad taste and not conducive to building
@@ -259,6 +287,8 @@ within the United States with Germany being a close second in market share at
 [PRISM](https://prism-break.org/en/) and how the US Government has stated under
 oath that all parties involved were, contrary to their claims, complicit in
 spying.
+
+Please also view info on [PRISM](https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29#The_slides) on Wikipedia.
 
 [Just sniff the wire.][sniffwire]
 
@@ -313,7 +343,7 @@ I2P is extremely popular with the alternative currency crowd and it is easy to
 see that I2P provides an excellent set of tools for interacting with that
 technology. While there are vulnerabilities within the technology and a host of
 peoples who are toiling away in an attempt to disrupt or harm the network, they
-have worked dilligently to provide an acceptable product that I feel is worth
+have worked diligently to provide an acceptable product that I feel is worth
 using for any one who does not need to rely on the tool for their life.
 
 ## Final Recommendations
