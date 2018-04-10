@@ -30,6 +30,11 @@ At the conclusion of the course the student will be able to:
 
 4. Explain how I2P is different than Tor.
 
+<div class="video-container">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o3CSTP86VHM"
+	frameborder="0" allowfullscreen></iframe>{: itemprop="associatedMedia" itemscope itemtype="http://schema.org/VideoObject" }
+</div>
+
 ## Introduction
 
 [The I2P Project.](https://geti2p.net/en/)
