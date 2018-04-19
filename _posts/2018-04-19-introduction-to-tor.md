@@ -30,15 +30,28 @@ At the conclusion of the course the student will be able to:
 
 4. Explain how Tor began.
 
-## FOSTA - Fight Online Sex Trafficing Act
+## FOSTA - Fight Online Sex Trafficking Act
 
 The [FOSTA bill][fostacongress] was passed by the House of Representatives.
 This kills the Craigs List. Any website found to be promoting prostitution or
-sex trafficing can now be held responsible for the content within.
+sex trafficking can now be held responsible for the content within. This will be
+selectively enforced to target start ups and small businesses.
+
+Some news outlets have claimed that FOSTA will disproportionately harm innocent
+LGBT peoples. These arguments are not new and have existed in relation to
+computers for a long time. Please view the Computer Chronicles episode on 
+[BBS and Modems][chronbbs] for an interesting discussion between the hosts, a
+BBS sysop, and an assistant district attorney.
+
+The question is posed - should admins be held responsible for the discussions
+held on their boards? Is a BBS like a newspaper with first ammendment rights or
+is it like a utilitie that is subject to regulation? The exact questions we are
+asking today were previously posited then. What has changed between then and
+now?
 
 ## The CLOUD Act Rains On Our Parade
 
-The [CLOUD bill][cloud] is currently in the budget and is being snuck into use
+The [CLOUD act][cloudcongress] is currently in the budget and is being snuck into use
 as we speak. This will improve law enforcement access to data found on servers
 outside the United States and provide a loop hole to by pass all rights and
 protections to privacy. We will now be able to work openly with foreign
@@ -51,6 +64,9 @@ spy services in connection with investigating the victims of the Lockerbie
 Bombing. This behavior would not be illegal under this new bill it would
 appear.
 
+Microsoft is in [court][courtcloud] already due to the passing of this bill. I
+want to know what was on the server the government is after.
+
 ## Protest Fatigue
 
 Can we forever be outraged? How can we stay angry forever? We fought SOPA,
@@ -60,14 +76,13 @@ money, attention, and outrage. It would also appear that we are loosing every
 battle. Network neutrality is a loss. FOSTA will be a loss. We will loose on
 the CLOUD bill. What do we do next?
 
-
 ## Introduction
 
 [The Tor Project.](https://www.torproject.org/index.html.en)
 
 ## How does Tor Work
 
-Tor works as an internet networking protcol with the intent of anonymizing any
+Tor works as an internet networking protocol with the intent of anonymizing any
 information passed through it. It allegedly provides protection to journalists,
 activists, business people, the military, and others. Tor encrypts traffic and
 bundles it through a method known as onion routing before passing on this
@@ -82,42 +97,23 @@ trust any browser. Active exploits of the Tor Browser exist in the wild at this
 very moment and large and complex tools like the Tor Browser will continue to
 be vulnerable. Full stop.
 
+[In fairness][elinkscve] I will also provide the 7 current vulnerabilities in
+Elinks.
+
 ## How To Install
 
 1. [Review the code][gittor] on their GIT platform! You don't have an
    excuse. You need to stop and look at the tool, how it is made, and who is
    making it. Check their [Github][githubtor] as well.
 
-2. [Acquire hosting][scaleways] on an external platform. You have a lot of
-   options.  I prefer scaleway as a platform because they are off shore. Pick
-   your favorite country, pick a provider, and get a VPS. A $3.00 'starter
-   cloud' is a sufficient package for hosting a Tor install.
-
-3. [Get the installer][installtor] and get it onto your VPS. The process
+2. [Get the installer][installtor] and get it onto your computer. The process
    will look like the following.
 
 	```
 	$ apt install tor 
 	```
 
-4. We will want to run the software locally. This can be done with a tunnel.
-   Run this command on your local machine.
-
-	```
-	$ ssh -L 7657:127.0.0.1:7657 YOURSERVERIPHERE
-	```
-
-5. We will also want to gain access to Tor sites locally. These are also known
-   as eepsites. This requires access to port 4444.
-	```
-	$ ssh -L 4444:127.0.0.1:4444 YOURSERVERIPHERE
-	```
-
-5. We then open a browser on our local machine and surf over to
-   http://localhost:7657
-
-6. You will then want to surf over to Configuration->Network and get your port.
-   You can then open this UDP port in your firewall.
+3. Open the Tor Browser
 
 ## Docker Install Alternatives
 
@@ -138,14 +134,14 @@ The use of Tor has been a deciding factor in [investigating you][tortarget].
 
 When discussing Tor and the manner in which many individuals complain about
 harassment due to their participation as an exit router, we need to look at the
-laws concering [accomplice liability][accomplicelaw]. You should also read more
+laws concerning [accomplice liability][accomplicelaw]. You should also read more
 about [accomplice law][accomplicelaw2].
 
 Tor is used to commit crimes. The open net is used to commit crimes. Cars,
 planes, trains, and even banjos have been used by criminals or became
 instruments in crimes. We don't try to ban them, spy on people for owning them,
 or worry that our neighbors may be serial 'pumpernicklers'. In 1988 a murder
-was commited in Britain in which a man was beaten to death with bread. But
+was committed in Britain in which a man was beaten to death with bread. But
 privacy is a fearful thing and those who wish to retain their right to privacy
 are considered strange, scary, or weird.
 
@@ -164,12 +160,18 @@ information.
 
 ## How To Setup
 
+1. Set security to high.
+
+2. Disable Javascript - No White lists
+
+3. Keep Tor running some where with 24/7 uptime or as close to as possible
+
 ## Who Made Tor
 
 Tor was originally developed as a method for the United States Government to
 provide bi-directional communications over the internet where the source and
 destination are hidden from view. The Department Of Defense, Naval
-Intelligence, and Darpa deployed Tor in order to protect their assets and to
+Intelligence, and DARPA deployed Tor in order to protect their assets and to
 hide their activities. It was never intended as a tool for dissidents or as a
 tool to protect users from government spying. It was created to facilitate
 spying while using the noise produced by others to mask their behavior.
@@ -183,9 +185,22 @@ communication to the public as a side effect of that mission.
 ## Tor Financials
 
 You can learn about the [financial][torfinancials] status of the Tor Project
-from their tax statements.
+from their tax statements. You can see who is paying what, where donations come
+from, and how much money is being spent on different aspects of the project.
+Some believe that Tor is funded by the US [government][torgov]. I would be
+inclined to believe it, but don't consider it a bad thing. The BBG, the
+American Propaganda Company, provided approximately
+[$6.1 million dollars][torfund] to Tor between 2007 and 2015.
+
+I could not locate the financials for the RiseUp group.
 
 ## What does Tor do
+
+Tor allows users to enhance their privacy and gives some level of identity
+protection. It is not a perfect tool that can be trusted to make a users
+completely anonymous, hidden, or invisible. No currently known tools can
+provide absolute protection. The Tor system relies on a custom Firefox fork,
+local software or proxy, and an internet connection.
 
 ## Spying is old hat
 
@@ -209,27 +224,79 @@ number of private and Government users who wish to cause you harm or unmask
 you.
 
 You can also attack the [internet backbone][tempora]. This gives you a birds
-eye view of internet behavior and greatly simplifys finding the hidden services
-hosted as .onion sites.
+eye view of internet behavior and greatly simplifies finding the hidden
+services hosted as .onion sites. We have discussed this before but it needs to
+be repeated.
+
+Javascript provides many vulnerabilities. As per usual.
+
+## Significant Incidents In Tor History
+
+Tor is in a particularly difficult position and has suffered several 
+[scandals][torchat]. One situation occurred in which an individual who presented
+themselves as a State Department Employee achieved employment within the Tor
+project. They then later revealed they were a member of an American
+intelligence agency and had joined up with Tor in order to 'do some good' while
+using false credentials. They later claimed that the Government had no
+knowledge of their clandestine 'personal operation' to improve Tor. One Tor
+member was so concerned by this deception and their own situation that
+they believed their family would be killed.
+
+mrphs or [Nima Fatemi][mrphs] is(was) an Iranian who functioned as a
+contributor to the Tor project. Shortly after this chat occurred he moved to the
+United States and began deploying Tor exit nodes inside
+[libraries][librarytor]. The Tor nodes were [brought down][libdown] and then
+allowed to [run again][libup] after public support came through.
+
+Tor is regularly used for hosting child pornography. Playpen was run by the FBI
+and Childs Play was run by the Australian Police Department. Governments are
+unmasking onion sites, taking them over, and impersonating these sites. I do
+not know of any efforts to unmask the method used for capturing these sites or
+understanding the methodology used for defeating Tor.
 
 ## Content
 
+Tor content includes all open net sites that do not explicitly block Tor use
+as well as many .onion based sites. The most well known and notorious criminal
+related sites rely on Tor due to the manner in which it provides a similar
+style of platform as the open net for conducting web based business.
+
+Most users employ Tor for surfing clear net sites with enhanced 'security'.
+However, over 1 million users are currently logging into Facebook using Tor. My
+assumption is that many of these users live in non permissive environments that
+do not allow connection to Facebook.
+
 ## Answers
 
-1. Tor is a peer-to-peer platform that appears to regularly tout a strong
-   connection to cyptocurrency and dark markets.
+1. Tor is a peer-to-peer platform that employs the use of a specific browser to
+   function. 
 
-2. An example of a [Javcascript exploit is found here][cveexploit] with more
-   [information][cvenist] provided by the NIST.
+2. Users of Tor include Doctors, Educators, Privacy Advocates, Drug Addicts,
+   Seditionists, and Criminals. 
 
 3. Tor functions by allowing users to anonymously share files, browse, chat,
    and more through the use of the Tor protocol.
 
-4. Tor uses onion routing while Tor uses garlic routing. Tor is more focused on
-   accessing servers outside the Tor network while Tor attempts to minimize
-   connections to the clear net.
+4. Tor uses onion routing while I2P uses garlic routing. Tor is more focused on
+   accessing servers outside the Tor network while I2P and Freenet attempt to
+   minimize connections to the clear net.
 
 ## Conclusion
+
+This concludes our three part deep dive into privacy enhancing tools. I stand
+by my statement that I believe Freenet to be the best of the three that were
+reviewed. Tor provides an interesting tool set designed to provide some very
+specific protections but due to the nature in which it is configured, the
+reliance on the Tor Browser, and the historical as well as current issues we
+have found, I do not recommend this toolset.
+
+I wish deeply that we could build an internet that was designed to be secure
+from the start. The current assortment of tools for 'securing' us or providing
+us with 'privacy' are bandages that hide a festering wound. The internet was
+not made to be secure or private and we have moved far beyond the point of
+being able to resolve the issues with the current deployment of tools. It will
+be some time before we find a resolution for our problem and I personally
+believe that we will not find a resolution for the issue.
 
 ## Final Recommendations
 
@@ -257,3 +324,14 @@ hosted as .onion sites.
 [cloudcongress]: https://www.congress.gov/bill/115th-congress/senate-bill/2383 'CLOUD'
 [mozcve]: https://www.cvedetails.com/vulnerability-list/vendor_id-452/product_id-3264/cvssscoremin-7/cvssscoremax-7.99/Mozilla-Firefox.html ' Firefox vulns'
 [tempora]: http://archive.is/ueCuH 'Attack the back bone'
+[courtcloud]: http://archive.is/yka6B 'Supreme Court Case Drop For Microsoft'
+[hushmail]: http://archive.is/P3qio 'Hushmail broke for law enforcement'
+[torgov]: http://archive.is/ppIwD 'Tor project funding controversie'
+[torfund]: http://archive.is/9pVBt 'Tor Broadcasting Links'
+[elinkscve]: https://www.cvedetails.com/vulnerability-list/vendor_id-1592/Elinks.html 'Vulnerabilities in Elinks'
+[torchat]: /../assets/tor-chat-06292016.txt 'A mole in Tor'
+[mrphs]: https://twitter.com/mrphs 'Nima Fatemi'
+[librarytor]: http://archive.is/iAPLV 'Tor in Libraries'
+[libdown]: https://techcrunch.com/2015/09/14/homeland-security-shuts-down-librarys-tor-node-citing-situational-awareness/ 'Library Relay Closed'
+[libup]: http://archive.is/oghA5 'Library Relay Reopened'
+[chronbbs]: https://www.youtube.com/watch?v=Pb7te_HZyiA&t=14m21s 'BBS And Free Speech'
