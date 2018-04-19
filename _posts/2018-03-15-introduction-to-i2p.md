@@ -156,13 +156,10 @@ effort to better the tool. The vast majority of these users appear to be taking
 their privacy very serious and many of them work under pseudonym. The original
 creator was known as 'jrandom' which is a generic term used in many books to
 denote the user. Development began in 2003 and started around the same time
-that Tor development began. At some point, jrandom vanished and the entire
-project very nearly came to a crashing halt. Over time, it was salvaged and the
+that Tor development began. At some point, jrandom vanished, see [jrandom's AWOL Announcement](https://geti2p.net/en/misc/jrandom-awol)
+and the entire project very nearly came to a crashing halt. Over time, it was salvaged and the
 I2P project was able to continue development.
 
-Unsubstantiated claims that jrandom was a Chinese national now being held in a
-prison in mainland China have been made but no facts available currently back
-up these claims. An interesting rumor none the less. 
 
 ## What does I2P do
 
