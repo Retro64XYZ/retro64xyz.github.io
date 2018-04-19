@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Introduction To Tor"
-date: 2018-03-13T15:52:43-07:00
+date: 2018-04-19T04:52:43-07:00
 author: RetroMe
 summary: >
   Introduction To Tor is a two-hour course designed to provide an
