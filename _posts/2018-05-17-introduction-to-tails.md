@@ -92,6 +92,9 @@ safe method of working with TOR with a reasonable amount of security.
 
 ## Why use TAILS
 
+When you want to enhance security and privacy while reducing the chance that forensic analysts will be
+able to recover your information from the system you were using.
+
 ## How to secure your thumb drive
 
 Don't loose it. Don't allow others to grab it.
